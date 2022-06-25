@@ -27,10 +27,10 @@ const Navigation = () => {
                 <CrownLogo className="logo"/>
             </Link>
           <div className="nav-links-container">
-            <Link className="nav-link" to="/shop">
+            <Link className="nav-link" to="shop">
                 Shop
             </Link>
-            {currentUser ? (<span className="nav-link" onClick={signOutUser}>SIGN OUT</span> ) :(<Link className="nav-link" to="/auth">
+            {currentUser ? (<span className="nav-link" onClick={signOutUser}>SIGN OUT</span> ) :(<Link className="nav-link" to="auth">
                 SIGN IN
             </Link>)}
             <CartIcon />
