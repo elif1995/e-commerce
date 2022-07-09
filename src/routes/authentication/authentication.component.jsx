@@ -1,26 +1,15 @@
-import React,{useEffect} from 'react'
-import './authentication.styles.scss'
-import SignUpForm from '../../components/sign-up-form/sign-up-from.component'
-import SignInForm from '../../components/sign-in-form/sign-in-from.component'
+import SignUpForm from '../../components/sign-up-form/sign-up-from.component';
+import SignInForm from '../../components/sign-in-form/sign-in-from.component';
+
+import { AuthenticationContainer } from './authentication.styles';
 
 const Authentication = () => {
-
-   
-
-    
-
-    
   return (
-    <div className="authentication-container">
-        
-       
-        <SignInForm/>
-        <SignUpForm />
-        
-        
+    <AuthenticationContainer>
+      <SignInForm />
+      <SignUpForm />
+    </AuthenticationContainer>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Authentication
+export default Authentication;
